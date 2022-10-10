@@ -1,0 +1,12 @@
+.marcador {
+    background-color: aqua;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.extensão_fundo{
+        background-image: url("img/topo.jpg");
+}
