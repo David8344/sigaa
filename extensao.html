@@ -20,55 +20,75 @@
   <!--NAVBAR MENU TOP-->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">SIGAA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="logo_nav fontes  fw-semibold  px-1">
+        <button type="button" class="btn btn-outline-light btn-sm px-1">login</button>
+      </div>
+      <div class="asd fontes text-bg-dark" style="font-size: 35px;">UFRN</div>
+      <div class="botaoo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <h6 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sistema Integrado de Gestão de <br> Atividades
+            Acadêmicas</h6>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">SIGAA</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-fixed-bottom disabled" href="#">09/10/2022</a>
             </li>
           </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </div>
   </nav>
   <!--NAVBAR MENU TOP-->
+
+  <!--NAVBAR MENU PAGINAS-->
+  <div class="container py-3">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link ">Destaques</a>
+      </li>
+      <li class="nav-item">
+        <a href="calendario.html" class="nav-link">Calendário</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Departamentos</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Acervo</a>
+      </li>
+      <li class="nav-item">
+        <a href="extensao.html" class="nav-link active">Extensão</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Cursos</a>
+      </li>
+    </ul>
+  </div>
+  <!--NAVBAR MENU PAGINAS-->
+
   <!--Filtro-->
 
   <div class="container-fluid py-3 text-bg-secondary">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-lg-1 col-md-2 col-sm-2">
         <div class="dropdown">
           <div>Cordenador:</div>
           <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,7 +101,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-lg-1 col-md-2 col-sm-2">
         <div class="dropdown">
           <div>Atividades:</div>
           <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,7 +114,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-lg-1 col-md-2 col-sm-2">
         <div class="dropdown">
           <div>Unidade:</div>
           <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -107,7 +127,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-lg-1 col-md-2 col-sm-2">
         <div class="dropdown">
           <div>Ano:</div>
           <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -120,13 +140,13 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-2">
-        <div class="cordenador-div">Titulo da Ação</div>
+      <div class="col-lg-1 col-md-2 col-sm-2">
+        <div>Titulo da Ação</div>
         <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Eco-Sistemas
         </button>
       </div>
-      <div class="col-md-2">
+      <div class="col-lg-1 col-md-2 col-sm-2">
         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
           <button type="button" class="btn btn-outline-success btn-light">Enviar</button>
           <a href="" class="btn btn-light btn-outline-primary">Apagar</a>
@@ -138,14 +158,15 @@
 
   <!--filtro-->
 
+  <!--Conteudo-->
   <div class="container py-3">
     <div class="row">
-      <div class="col-md-9 bg-dark bg-gradient ">
+      <div class="col-lg-9 bg-dark bg-gradient ">
         <div class="row text-white">
           <p>UFRN | Eco-Sistemas</p>
         </div>
         <div class="row bg-light text-bg-light mx-2 mb-0">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="row w-50">
               <img src="img/rectangle-71_2x-removebg-preview.png">
             </div>
@@ -159,7 +180,7 @@
               <p>CAENE</p>
             </div>
           </div>
-          <div class="col-md-8 w-50">
+          <div class="col-lg-8 w-50">
             <p class="fs-">Eco-Sistemas</p>
             <p class="fw-bold">
             <h2>Coordenador</h2>
@@ -179,7 +200,7 @@
 
       </div>
 
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <div class="row">
           <img src="img/rectangle-65@2x.png">
         </div>
@@ -199,76 +220,55 @@
     </div>
   </div>
 
-
+  <!--Conteudo-->
 
 
   <!-- footer -->
   <footer>
-    <div class="container-fluid text-bg-dark">
-      <div class="row">
-        <div class="col-md-6">
+    <div class="container-fluid py-3 text-bg-dark">
+      <div class="row py-3 px-3">
+        <div class="col-lg-6 fw-bold">
           <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <a href="">Acesse a Central de Ajuda</a>
+      <div class="row px-3 fw-semibold">
+        <div class="col-lg-6">
+          <a href="" class="text-reset">Acesse a Central de Ajuda</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2">
-          <p>
-          <h3>Empresa</h3>
-          Quem somos
-          O que oferecemos
-          Newsroom
-          Investidores
-          Blog
-          </p>
+      <div class="row px-3 texto_footer d-flex">
+
+        <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+          <h6 class="fw-bold">Docentes</h6>
+          <a href="" class="text-reset">Acesse Paginas</a>
+          <a href="" class="text-reset">Consulte chefes</a>
+          <a href="" class="text-reset">Coordenadores</a>
         </div>
-        <div class="col-md-2">
-          <p>
-          <h3>Produto</h3>
-          Quem somos
-          O que oferecemos
-          Newsroom
-          Investidores
-          Blog
-          </p>
+        <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+          <h6 class="fw-bold">Especializados</h6>
+          <a href="" class="text-reset">Unidades</a>
+          <a href="" class="text-reset">Documentos</a>
+          <a href="" class="text-reset">Coordenadores</a>
         </div>
-        <div class="col-md-2">
-          <p>
-          <h3>Empresa</h3>
-          Quem somos
-          O que oferecemos
-          Newsroom
-          Investidores
-          Blog
-          </p>
-        </div>
-        <div class="col-md-2">
-          <p>
-          <h3>Empresa</h3>
-          Quem somos
-          O que oferecemos
-          Newsroom
-          Investidores
-          Blog
-          </p>
+        <div class="col-md-4 col-sm-6 col-xs-3 d-flex flex-column bd-highlight mb-3 mt-3">
+          <h6 class="fw-bold">Sistema</h6>
+          <a href="" class="text-reset">Diretores</a>
+          <a href="" class="text-reset">Centros</a>
+          <a href="" class="text-reset">Investidores</a>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          ICONES
+          <img src="img/image4.png" width="70%" alt="">
         </div>
-        <div class="col-md-3">
-          <a href="">Links</a>
-          <a href="">Links</a>
-          <a href="">Links</a>
+        <div class="col-md-3 offset-md-3 offset-sm-1 col-sm-12 py-4 texto_footer fw-bold ">
+          <a href="" class="px-1 text-reset">Privacidade</a>
+          <a href="" class="px-1 text-reset">Acessibilidade</a>
+          <a href="" class="px-1 text-reset">Termos</a>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 offset-md-5">
+        <div class="col-md-6 offset-md-5" style="color: rgba(255, 255, 255, 0.5); font-size: 10px;">
           @ 2022 COG - Interprise System
         </div>
       </div>
