@@ -1,6 +1,7 @@
 H3 {
     margin: 0;
 }
+
 @media screen and (max-width: 992px) {
     .image2{
         display: none;
