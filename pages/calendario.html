@@ -10,13 +10,13 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../assents/css/estilo.css">
-        <link rel="stylesheet" href="calendario.css">
+        <link rel="stylesheet" href="../assents/css/calendario.css">
     </head>
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <div class="logo_nav fontes  fw-semibold  px-1">
-                <button type="button" class="btn btn-outline-light btn-sm px-1">login</button> 
+                <button type="button" class="btn btn-outline-light btn-sm px-1"><a href="/pages/login.html">logar</a></button> 
                 </div>
               <div class="asd fontes fw-bold" style="font-size: 35px;">UFRN</div>
               <div class="botaoo">
@@ -32,13 +32,13 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                      <a class="nav-link active" aria-current="page" href="../index.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">SIGAA</a>
+                      <a class="nav-link" href="https://sigaa.ufrn.br/sigaa/public/home.jsf">SIGAA</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Sair</a>
+                      <a class="nav-link" href="https://www.google.com/">Sair</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link navbar-fixed-bottom disabled" href="#">09/10/2022</a>
@@ -52,10 +52,10 @@
     <div class="container py-3">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a href="" class="nav-link active">Destaques</a>
+          <a href="/index.html" class="nav-link">Destaques</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">Calendário</a>
+          <a href="" class="nav-link active">Calendário</a>
         </li>
         <li class="nav-item">
           <a href="" class="nav-link">Departamentos</a>
@@ -71,13 +71,15 @@
         </li>
       </ul>
     </div>
-    <div class="container infor">
-      <div class="row">
+    
+    <div class="container ">
+      <H2 class="py-4 fw-bold border-bottom">Calendário Academico</H2>
+      <div class="row infor">
         <div class="col-md-12 ">
           <div class="col-md-6 d-flex ">
             <div class="offset-md-1 col-md-2 col-sm-2 ">
-              <div class="dropdown">
-                <p class="fw-semibold">Ano:</p>
+              <p class="fw-semibold text_infor">Ano:</p>
+              <div class="dropdown ">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  --------
                 </a>    
@@ -90,7 +92,7 @@
             </div>
             <div class="  col-md-2 col-sm-2 itens ">
               <div class="dropdown ">
-                <p  class="fw-semibold">Cursos:</p>
+                <p  class="fw-semibold text_infor">Cursos:</p>
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Todos
                 </a>    
@@ -101,9 +103,8 @@
                 </ul>
               </div>
             </div>
-            <div class="enviar  d-flex ">
-              <button type="button" class="btn btn-primary btn-sm">enviar</button>
-              <a href="" class="fw-semibold">apagar</a>
+            <div class=" enviar  mx-5 d-flex ">
+              <button type="button" class=" btn btn-primary btn-sm">enviar</button>
             </div>
           </div>
           <div class="col-md-6">
@@ -114,84 +115,95 @@
     </div>
     <section class="conteudo">
 
-      <div class="container  py-5">
-       <div class="row d-flex">
-        <div class="col-md-4 col-sm-12">
-          <img src="../assents/img/calendario.png" width="100%" alt="">
-          <div class="conteudoc py-2">
+      <div class="container  container_calendario py-5">
+       <div class="row d-flex ">
+        <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+          <h4 class="fw-bold">JANEIRO</h4>
+          <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+          <div class="conteudoc py-2 border border-2">
             <h5 class="fw-semibold">Dia  1 - Folclore</h5>
             <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
             <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
-          <img src="../assents/img/calendario.png" width="100%" alt="">
-          <div class="conteudoc py-2">
+        <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+          <h4 class="fw-bold">FEVEREIRO</h4>
+          <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+          <div class="conteudoc py-2 border border-2">
             <h5 class="fw-semibold">Dia  1 - Folclore</h5>
             <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
             <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
-          <img src="../assents/img/calendario.png" width="100%" alt="">
-          <div class="conteudoc py-2">
+        <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+          <h4 class="fw-bold">MARÇO</h4>
+          <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+          <div class="conteudoc py-2 border border-2">
             <h5 class="fw-semibold">Dia  1 - Folclore</h5>
             <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
             <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
           </div>
+        </div>  
         </div>
-        <div class="row d-flex py-4">
-          <div class="col-md-4 col-sm-12">
-            <img src="../assents/img/calendario.png" width="100%" alt="">
-            <div class="conteudoc py-2">
+        <div class="row d-flex py-5">
+          <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+            <h4 class="fw-bold">ABRIL</h4>
+            <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+            <div class="conteudoc py-2 border border-2">
+              <h5 class="fw-semibold">Dia  1 - Folclore</h5>
+              <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
+              <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+            </div>
+      
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+            <h4 class="fw-bold">MAIO</h4>
+            <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+            <div class="conteudoc py-2 border border-2">
               <h5 class="fw-semibold">Dia  1 - Folclore</h5>
               <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
               <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <img src="../assents/img/calendario.png" width="100%" alt="">
-            <div class="conteudoc py-2">
+          <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+            <h4 class="fw-bold">JUNHO</h4>
+            <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+            <div class="conteudoc py-2 border border-2">
               <h5 class="fw-semibold">Dia  1 - Folclore</h5>
               <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
               <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
             </div>
+          </div>  
           </div>
-          <div class="col-md-4 col-sm-12">
-            <img src="../assents/img/calendario.png" width="100%" alt="">
-            <div class="conteudoc py-2">
-              <h5 class="fw-semibold">Dia  1 - Folclore</h5>
-              <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
-              <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+          <div class="row d-flex border-bottom">
+            <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+              <h4 class="fw-bold">JULHO</h4>
+              <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+              <div class="conteudoc py-2 border border-2">
+                <h5 class="fw-semibold">Dia  1 - Folclore</h5>
+                <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
+                <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+              </div>
             </div>
-          </div>
-         </div>
-         <div class="row d-flex py-4">
-          <div class="col-md-4 col-sm-12">
-            <img src="../assents/img/calendario.png" width="100%" alt="">
-            <div class="conteudoc py-2">
-              <h5 class="fw-semibold">Dia  1 - Folclore</h5>
-              <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
-              <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+            <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+              <h4 class="fw-bold">AGOSTO</h4>
+              <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+              <div class="conteudoc py-2 border border-2">
+                <h5 class="fw-semibold">Dia  1 - Folclore</h5>
+                <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
+                <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img src="../assents/img/calendario.png" width="100%" alt="">
-            <div class="conteudoc py-2">
-              <h5 class="fw-semibold">Dia  1 - Folclore</h5>
-              <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
-              <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+            <div class="col-md-3 col-sm-12 d-flex flex-column align-items-center ">
+              <h4 class="fw-bold">SETEMBRO</h4>
+              <img src="../assents/img/calendario.png" width="100%" class="calendario_img py-3" alt="">
+              <div class="conteudoc py-2 border border-2">
+                <h5 class="fw-semibold">Dia  1 - Folclore</h5>
+                <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
+                <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
+              </div>
+            </div>  
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <img src="../assents/img/calendario.png" width="100%" alt="">
-            <div class="conteudoc py-2">
-              <h5 class="fw-semibold">Dia  1 - Folclore</h5>
-              <h5 class="fw-semibold">Dia 16 - Dia da beterraba</h5>
-              <h5 class="fw-semibold">Dia 25 - Feriado Municipal</h5>
-            </div>
-          </div>
-         </div>
        </div>  
        </div>
       </div>
@@ -205,8 +217,8 @@
 
 
 
-    <footer>
-        <div class="container-fluid marcador copyright py-3">
+    <footer >
+        <div class="container-fluid marcador copyright py-5">
             <div class="row py-3 px-3">
                 <div class="col-md-6 fw-bold">
                     <p>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
